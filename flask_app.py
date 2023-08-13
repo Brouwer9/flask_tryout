@@ -5,11 +5,11 @@ app=Flask(__name__)
 
 if __name__ =='_main_':
     app.run(port=5000,debug=True)
-    
-@app.route('/')
-def home ():
-    return "<p>Hello world!</p>"
 
 @app.route('/')
-def home (basic_Flask_code):
-    return "<p>Test run!</p>"
+def home ():
+    return "<p>Hello World</p>"
+
+@app.route('/basicFlaskcode')
+def basicFlaskcode ():
+    return "<p>test</p>"
